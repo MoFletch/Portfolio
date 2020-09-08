@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en.us">
 <head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maureen Fletcher Portfolio</title>
@@ -33,74 +34,61 @@
     <!--here/jumbotron-->
     <!--start hero-->
     <section class="hero">
-        <h2>Work Hard Play Hard</h2>
+        <!--insert this img element-->
+        <h2>Work Hard Play Hard!</h2>
     </section>
      <!--end hero-->
-    <!--"about me section-->
-    <section id="about-me">
-        <div>
-            <h2>About Me</h2>
-            <p>
-                As a 25+ year experiential marketing professional, I help Fortune 100+ companies reach consumers and grow their brands. I have worked with brands in the following categories: motorcycling, automotive, consumer packaged goods, toys, financial, retail services, pharmaceutical, spirits and beer, and sustainability initiatives.
-            </p>
+    <!-- portfolio grid start-->
+    <section id="experience-grid" class="experience">
+        <!--experience-grid-wrapper start-->
+        <!--experience-grid-container start -->
+        <div class="experience-grid-wrapper">
+            <div class="experience-grid-container">
+                <!--Sections-->
+                <div id="aboutme" class="experience-grid-item-about border-right"> 
+                    About Me
+                </div>
+                <div class="about1"><img src="assets/images/me.jpg" alt=""></div>
+                <div class="about2">
+                    As a 25+ year experiential marketing professional, I help Fortune 100+ companies reach consumers and grow their brands. I have worked with brands in the following categories: motorcycling, automotive, consumer packaged goods, toys, financial, retail services, pharmaceutical, spirits and beer, and sustainability initiatives.
+                </div>
+                <div id="work" class="experience-grid-item-work border-right"> 
+                    Work
+                </div>
+                <div class="work1">
+                    <img src="../Mod2Challenge/assets/images/Run-Buddy.png" alt="">
+                        <div class="text-block-run-buddy">
+                            <h4>Run Buddy</h4>
+                            <p>HTML/CSS</p>                          
+                        </div>
+                </div>
+                <div class="work2"><img src="../Mod2Challenge/assets/images/Code-Refactor-Page.png" alt=""></div>
+                <div class="work3"><img src="../Mod2Challenge/assets/images/Summer-Placeholder.jpg" alt=""></div>
+                <div class="work4"><img src="../Mod2Challenge/assets/images/Fall-Placeholder.jpg" alt=""></div>
+                <div class="work5"><img src="../Mod2Challenge/assets/images/Winter-Placeholder.jpg" alt=""></div>
+                <div id="contact-me" class="experience-grid-item-contact border-right">
+                    Contact Me
+                </div>
+                <div class="phone">
+                    <a href="tel:2624244625">262-424-4625</a>
+                </div>
+                <div class="biz-email">  
+                    <a href="mailto:maureensfletcher@gmail.com">maureensfletcher@gmail.com</a>
+                </div>
+                <div class="biz-git">
+                    <a href="https://MoFletch.github.io/">GitHub</a>
+                </div>
+                <div id="resume" class="experience-grid-item-resume border-right">
+                    Resume
+                </div>
+                <div class="resume-link">
+                        <a href="https://www.linkedin.com/in/maureenfletcher/">View Resume on LinkedIn</a>
+                </div>
+            </div> <!-- div service-grid-container -->
+        </div> <!-- div service-grid-wrapper -->
+
+            </div>
         </div>
     </section>
-    <section id="work">
-        <div>
-            <h2>Work</h2>
-            <div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Run Buddy</h3>
-                <h4>HTML/CSS</h4>
-            </div>
-            <div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Horiseon</h3>
-                <h4>HTML/CSS Code Refactor</h4>
-            </div>
-            <div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Xperiential Worldwide</h3>
-                <h4>Go Daddy Widget</h4>
-            </div>
-            <div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Practice 1</h3>
-                <h4>HTML/CSS</h4>
-            </div>
-            <div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Practice 2</h3>
-                <h4>HTML/CSS</h4>
-            </div><div>
-                <!--Add background image here-->
-                <img src=" ./assets/images/tbd.jpg" alt="tbd" />
-                <h3>Practice 3</h3>
-                <h4>HTML/CSS</h4>
-            </div>
-        </div>
-    </section>
-    <section id="contact-me">
-        <div>
-            <h2>Contact Me</h2>
-            <!--Unordered list element-->
-            <ul>
-                <!--List item element-->
-                <li>262-424-4625</li>
-                <li>maureensfletcher@gmail.com</li>
-                <li>MoFletch.github.io</li>
-                <li>Twitter</li>
-                <li>Spotify</li>
-            </ul>
-        </div>
-    </section>
-    <footer>
-        &copy;2019 Maureen Fletcher
-    </footer>
 </body>
 </html>
