@@ -67,173 +67,145 @@ header nav ul li a {
   padding: 7px 5px;
   background-color:#cc0099;
   text-align: center;
-  width: auto%;
+  width: auto;
   height: 30px;
   top: 80px;
   right: 0;
 }
 /* Hero End */
 /* Experience Styles Begin */
-.experience {
-  background: #e5e7e9;
-  color: #1a5276;
-}
-.experience-grid-wrapper {
-  display: flex;
+
+.grid-container-wrapper {
+  background-color: #e5e7e9;
   width: 100%;
   justify-content: center;
-  padding-top: 20px;
-  color: #1a5276;
+  margin: 20px;
 }
-.experience-grid-container {
-  width: 90%;
-  display: grid;
-  grid-gap: 20px;
-  align-items: stretch;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-template-rows: repeat(6, minmax(25px, auto));
-  /* repeat(iterator, size) */
-  color: #1a5276;
-  font-size: 28px;
+.grid-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr) auto;
+grid-gap: 20px;
+width: 80%;
+margin-left: 10px;
+}
+.item1-about {
+  grid-column: 1 / 1;
+}
+.item2-about {
+  background: url(../images/me.jpg);
+}
+.item3-about {
+  grid-column: 3 / -1;
+}
+.item4-work {
+  grid-column: 1 / 1;
+  grid-row: 2 / span 3;
+  border-right: 2px solid #1a5276;
+}
+.item5-work {
+  grid-column: 2 / span 2;
+  grid-row: 2/ span 2;
+  background: url(../images/Run-Buddy-Image.png);
+  position: relative;
+}
+#gitBuddy {
+  background-image:url(https://mofletch.github.io/Run-Buddy/);
+  display:block;
+  height:460px;
+  text-indent:-9999px;
+  width:500px;
+}
+.item6-work {
+  grid-column: 2;
+  grid-row: 4;
+  background: url(../images/Code-Refactor-Page.png);
+  position: relative;
+}
+#gitHoriseon {
+  background-image:url(https://mofletch.github.io/Code-Refactor/);
+  display:block;
+  height:230px;
+  text-indent:-9999px;
+  width:250px;
+}
+.item7-work {
+  grid-column: 3;
+  grid-row: 4;
+  background: url(../images/Summer-Placeholder.jpg);
+  position: relative;
+}
+.item8-work {
+  grid-column: 4;
+  grid-row: 2;
+  background: url(../images/Fall-Placeholder.jpg);
+  position: relative;
+}
+.item9-work {
+  grid-column: 4;
+  grid-row: 3;
+  background: url(../images/Winter-Placeholder.jpg);
+  position: relative;
+}
+.item10-contact {
+  grid-column: 1;
+  grid-row: 5;
+}
+.item11-contact {
+  grid-column: 2;
+  grid-row: 5;
+}
+.item12-contact {
+  grid-column: 3;
+  grid-row: 5;
+}
+.item13-contact {
+  grid-column: 4;
+  grid-row: 5;
+}
+.item14-resume {
+  grid-column: 1;
+  grid-row: 6;
+}
+.item15-resume {
+  grid-column: 2 / -1;
+  grid-row: 6;
+}
+.photo {
+  border: 5px solid #1a5276;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.copy {
+  font-size: 20px;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  background-color: #c00099;
+  color: white;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  justify-self: flex-end;
+  padding: 0 15px 0 0;
+}
+.copydata {
+  justify-self: center;
+  align-self: center;
 }
 .border-right {
   border-right: 2px solid #1a5276;
-  text-align: right;
-}
-/* Experience Styles End */
-/* Grid Layout Specific Match */
-/* Sidebar */
-.experience-grid-item-about {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-  color: #1a5276;
-  padding-right: 10px;
-}
-.experience-grid-item-work {
-  grid-row: 2 / span 3;
-  grid-column: 1 / span 1;
-  padding-right: 10px;
-}
-.experience-grid-item-contact {
-  grid-column: 1 / span 1;
-  grid-row: 5 / span 1;
-  padding-right: 10px;
-}
-.experience-grid-item-resume {
-  grid-column: 1 / span 1;
-  grid-row: 6 / span 1;
-  padding-right: 10px;
-}
-/* About Me Grid Formatting */
-.about1 {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-}
-.about1 img {
-  height: auto;
-  width: 100%;
-}
-.about2 {
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 1;
-  font-size: 20px;
-  align-self: center;
-  justify-self: center;
-}
-/* Work Experience Grid Formatting */
-.work1 {
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 2;
-  }
-.work1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.work2 {
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 1;
-}
-.work2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.work3 {
-  grid-column: 3 / span 1;
-  grid-row: 4 / span 1;
-}
-.work3 img {
-  height: 100%;
-  width: auto;
-  display: block;
-  object-fit: cover;
-}
-.work4 {
-  grid-column: 4 / span 1;
-  grid-row: 2 / span 1;
-}
-.work4 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.work5 {
-  grid-column: 4 / span 1;
-  grid-row: 3 / span 1;
-}
-.work5 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-/* Work Image Text Box Overlay Formatting */
-.background-image {
-  position: relative;
-}
-.text-block {
-  font-weight: bold;
-  font-size: 15px;
-  margin: 10px 10px 10px 0;
-  padding: 5px 5px;
-  width: auto;
-  background-color: #cc0099;
-  color: #1a5276;
-  position: absolute;
-}
-.bottom-left {
-  display: flex;
-  align-items: flex-end;
-  justify-content: left;
-}
- /* Contact Me Grid Formatting */ 
-.phone {
-  grid-column: 2 / span 1;
-  grid-row: 5 / span 1;
-  font-size: 18px;
-  align-self: center;
-  justify-self: center;
-}
-.biz-email {
-  grid-column: 3 / span 1;
-  grid-row: 5 / span 1;
-  font-size: 18px;
-  align-self: center;
-  justify-self: center;
-}
-.biz-git {
-  grid-column: 4 / span 1;
-  grid-row: 5 / span 1;
-  font-size: 18px;
-  align-self: center;
-  justify-self: center;
-}
-.resume-link {
-  grid-column: 2 / span 3;
-  grid-row: 6 / span 1;
-  align-self: center;
-  justify-self: center;
-  font-size: 20px;
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -249,6 +221,10 @@ header nav ul li a {
     padding: 7px 7px;
     width: 100%;
     }
+  header nav ul {
+    text-align: center;
+    justify-content: center;
+  }
   header nav ul li a {
     font-size: 15px;
     }
@@ -256,11 +232,10 @@ header nav ul li a {
     padding: 0;
     }
   .hero h2 {
-    font-size: 12px;
-  }
-  .experience {
-      padding: 0px 15px;
-    }
+    text-align: center;
+    margin: 10px 10px;
+    padding: 7px 7px;
+    width: 100%;
   }
   .text-block {
     font-size: 12px;
@@ -268,7 +243,7 @@ header nav ul li a {
   }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    .about2 {
+    .item2-about {
       font-size: 15px;
     }
   }
@@ -278,13 +253,13 @@ header nav ul li a {
     header nav ul li a {
       margin: 10px;
     }
-    .phone {
+    .item11-contact {
       font-size: 12px;
     }
-    .biz-email {
+    .item12-contact {
       font-size: 12px;
     }
-    .biz-git {
+    .item13-contact {
       font-size: 12px;
     }
   }
