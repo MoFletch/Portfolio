@@ -109,6 +109,7 @@ margin-left: 10px;
   background: url(../images/Run-Buddy-Image.png);
   position: relative;
 }
+/* Add hack for adding link to background image */
 #gitBuddy {
   background-image:url(https://mofletch.github.io/Run-Buddy/);
   display:block;
@@ -122,6 +123,7 @@ margin-left: 10px;
   background: url(../images/Code-Refactor-Page.png);
   position: relative;
 }
+/* Add hack for adding link to background image */
 #gitHoriseon {
   background-image:url(https://mofletch.github.io/Code-Refactor/);
   display:block;
@@ -207,6 +209,7 @@ margin-left: 10px;
 .border-right {
   border-right: 2px solid #1a5276;
 }
+/* Experience Styles End */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header nav {
@@ -246,8 +249,22 @@ margin-left: 10px;
     .item2-about {
       font-size: 15px;
     }
+    .grid-container {
+      display: block;
+      width: 200px;
+      justify-content: center;
+      align-content: center;
+    }
+    .border-right {
+      border-right: none;
+    }
+    .photo {
+      height: 200px;
+      width: 200px;
+      border: none;
+      margin: 0 0 10px 0;
+    }
   }
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 575px) {
     header nav ul li a {
