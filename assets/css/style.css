@@ -180,6 +180,7 @@ margin-left: 10px;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -243,7 +244,7 @@ margin-left: 10px;
   .text-block {
     font-size: 12px;
     }
-  }
+}
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
     .item2-about {
@@ -251,9 +252,7 @@ margin-left: 10px;
     }
     .grid-container {
       display: block;
-      width: 200px;
-      justify-content: center;
-      align-content: center;
+      padding: 0 0 0 100px;
     }
     .border-right {
       border-right: none;
@@ -263,6 +262,13 @@ margin-left: 10px;
       width: 200px;
       border: none;
       margin: 0 0 10px 0;
+    }
+    .title {
+      padding: 10px 0 0 0;
+      text-align: center;
+    }
+    .copy {
+      text-align: center;
     }
   }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
