@@ -3,8 +3,7 @@
 ### Personal Portfolio is a repository holding the HTML and CSS code, as well as image assets for Maureen Fletcher's personal page that outlines work experience.  This is the assignment for Module 2 end of lesson Challenge.  
 
 ## Maureen Fletcher Personal Portfolio Landing Page
-![Image of Maureen Fletcher website landing page]
-(assets/images/PublishedSite9.11.20.png) ] (https://mofletch.github.io/Portfolio/) "Personal Portfolio")
+[![Image of Maureen Fletcher website landing page](assets/images/PublishedSite9.11.20.png)](https://mofletch.github.io/Portfolio/) "Personal Portfolio")
 
 ## Introduction
 #### The Challenge requested the student create a site using best practices learned in Module 2, as well as integrating previous learnings.  This includes HTML and CSS, ensuring use of new learnings to include grids and responsive layouts.
