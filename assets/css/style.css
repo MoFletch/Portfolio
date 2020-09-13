@@ -79,16 +79,16 @@ header nav ul li a {
   background-color: #e5e7e9;
   width: 100%;
   justify-content: center;
-  margin: 20px;
 }
 .grid-container {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(4, 1fr) auto;
-grid-gap: 20px;
-width: 80%;
-margin-left: 10px;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr) auto;
+  grid-gap: 20px;
+  width: 80%;
+  margin-left: 10px;
+  padding-top: 10px;
+  }
 .item1-about {
   grid-column: 1 / 1;
 }
@@ -111,11 +111,10 @@ margin-left: 10px;
 }
 /* Add hack for adding link to background image */
 #gitBuddy {
-  background-image:url(https://mofletch.github.io/Run-Buddy/);
-  display:block;
-  height:460px;
+  background-image: url(https://mofletch.github.io/Run-Buddy/);
+  display: block;
+  height: 650px;
   text-indent:-9999px;
-  width:500px;
 }
 .item6-work {
   grid-column: 2;
@@ -125,11 +124,10 @@ margin-left: 10px;
 }
 /* Add hack for adding link to background image */
 #gitHoriseon {
-  background-image:url(https://mofletch.github.io/Code-Refactor/);
-  display:block;
-  height:230px;
-  text-indent:-9999px;
-  width:250px;
+  background-image: url(https://mofletch.github.io/Code-Refactor/);
+  display: block;
+  height: 300px;
+  text-indent: -9999px;
 }
 .item7-work {
   grid-column: 3;
@@ -181,7 +179,6 @@ margin-left: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
   position: relative;
   overflow: hidden;
 }
@@ -234,6 +231,7 @@ margin-left: 10px;
     }
   .hero {
     padding: 0;
+    height: 100px;
     }
   .hero h2 {
     text-align: center;
@@ -247,25 +245,32 @@ margin-left: 10px;
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    .item2-about {
-      font-size: 15px;
-    }
     .grid-container {
       display: block;
-      padding: 0 0 0 100px;
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      width: 100%;
+      padding: 20px;
+      }
+    .header {
+        position: relative;
+      }
+    .item2-about {
+      font-size: 15px;
     }
     .border-right {
       border-right: none;
     }
     .photo {
-      height: 200px;
-      width: 200px;
       border: none;
       margin: 0 0 10px 0;
+      height: 300px;
     }
     .title {
-      padding: 10px 0 0 0;
+      padding: 20px 0 10px 0;
+      margin: 0 0 10px 0;
       text-align: center;
+      border-bottom: 5px solid #1a5276;
     }
     .copy {
       text-align: center;
